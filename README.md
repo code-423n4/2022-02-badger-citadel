@@ -76,8 +76,8 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 ---
 
 # Badger Citadel contest details
-- TBD main award pot
-- TBD gas optimization award pot
+- $28,500 USDC main award pot
+- $1,500 USDC gas optimization award pot
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2022-02-badger-citadel-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
