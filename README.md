@@ -87,3 +87,34 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
+
+# Intro
+The Citadel DAO is a black hole for Bitcoin in DeFi and the biggest user of BadgerDAOs products. Its goal is to acquire BTC and other assets that will support its mission of growing the largest BTC focused treasury in DeFi. Initial bootstrap of its treasury will be through a token sale program whose contract is in this audit contest.
+
+The goal of this contest is to determine if the token sale contract is:
+
+- Safe to use
+- Mathematically will provide the correct amount of tokens given the inputs
+
+Specific care should be put in:
+
+- Economic exploits
+- Rug Vectors
+
+# Contract Description:
+
+[TokenSaleUpgradeable.sol](https://github.com/code-423n4/2022-02-badger-citadel/blob/main/contracts/TokenSaleUpgradeable.sol) - Allows a whitelisted user to deposit a `tokenIn` and after the claiming period begins claim Citadel Tokens.
+
+## Installation
+```bash
+git submodule update --init --recursive
+pip install -r requirements.txt
+yarn install
+curl -L https://foundry.paradigm.xyz | bash
+```
+
+## Test
+```bash
+brownie test
+forge test
+```
