@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+# brownie/foundry
+__pycache__
+.history
+.hypothesis/
+build/
+reports/
+out/
+cache/
+
