@@ -37,3 +37,6 @@ curl -L https://foundry.paradigm.xyz | bash
 brownie test
 forge test
 ```
+
+### Note
+Because the folder is named 2022-02-badger-citadel, brownie will have issues in running the tests, just rename the folder and you'll be fine
