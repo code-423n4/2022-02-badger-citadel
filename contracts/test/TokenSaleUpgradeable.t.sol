@@ -525,10 +525,11 @@ contract TokenSaleUpgradeableTest is DSTest, stdCheats, StdProxy {
 
     function testSetTokenInLimit() public {
         uint256 newTokenInLimit = 100 * 10**tokenIn.decimals();
-        tokenSale.setTokenInLimit(newTokenInLimit);
 
         vm.expectEmit(false, false, false, true);
         emit TokenInLimitUpdated(newTokenInLimit);
+
+        tokenSale.setTokenInLimit(newTokenInLimit);
 
         assertEq(newTokenInLimit, tokenSale.tokenInLimit());
     }
@@ -728,6 +729,7 @@ contract TokenSaleUpgradeableTest is DSTest, stdCheats, StdProxy {
 
         vm.prank(_from);
         vm.expectEmit(true, false, false, true);
+
         emit Claim(_from, _expectedOut);
 
         amountOut_ = tokenSale.claim();
